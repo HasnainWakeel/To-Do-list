@@ -1,0 +1,323 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0097a7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.add-img{
+    width: 25%;
+    cursor: pointer;
+}
+
+.head{
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#list-parent{
+    /* background-color: #000000; */
+    height: 75%;
+}
+
+#main {
+    width: 85%;
+    max-width: 600px;
+    background-color: #00838f;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    height: 70%;
+    overflow-y: auto;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #00838f;
+    outline: none;
+}
+
+input[type="text"]:focus{
+    border: 2px black solid;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background-color: #00bcd4;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0097a7;
+}
+
+#list-parent {
+    margin-top: 20px;
+}
+
+.hide {
+    display: none;
+    width: 100px;
+}
+
+.task input[type="text"] {
+    width: 50%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #00838f;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #4dd0e1;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.task p {
+    flex: 1;
+    margin: 0;
+    font-size: 1.2rem;
+    word-wrap: break-word;
+}
+
+.btn-parent{
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    background-color: #ff9800;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #f57c00;
+}
+
+.del-btn{
+    background-color: rgb(249, 0, 0);
+    transition: background-color 0.3s;
+}
+
+.del-btn:hover {
+    background-color: #d60303;
+}
+
+button:focus {
+    outline: none;
+}
+
+.don-btn {
+    background-color: #29ce31;
+}
+
+.don-btn:hover {
+    background-color: #388e3c;
+}
+
+
+
+@media screen and (min-width: 2560px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    #main {
+        max-width: 45%;
+        padding: 50px;
+        border-radius: 18px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.427);
+        height: 65%;
+    }
+    
+    form {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 50px;
+    }
+    
+    input[type="text"] {
+        width: 85%;
+        font-size: 35px;
+        height: 55px;
+        border-radius: 12px;
+        border: 2px solid #15adba;
+    }
+    
+    input[type="submit"] {
+        padding: 15px;
+        font-size: 35px;
+        border: 1px solid rgb(197, 195, 195);
+        border-radius: 12px;
+    }
+    
+    
+    .hide {
+        display: none;
+    }
+    
+    .task input[type="text"] {
+        width: 50%;
+        padding: 15px;
+        font-size: 35px;
+        border-radius: 12px;
+        border: 2px solid #15adba;
+    }
+    
+    .task {
+        padding: 35px;
+        margin-top: 40px;
+        border-radius: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.306);
+    }
+    
+    .task p {
+        font-size: 43px;
+    }
+    
+    .btn-parent{
+        width: 40%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    button {
+        background-color: #ff9800;
+        font-size: 33px;
+        padding: 18px 16px;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+    }
+
+    .add-img{
+        width: 35%;
+        cursor: pointer;
+    }
+    
+    .head{
+        cursor: pointer;
+        font-size: 78px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    #list-parent{
+        /* background-color: #bd8f8f; */
+        width: 102%;
+        height: 75%;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 426px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    #main {
+        max-width: 65%;
+        padding: 30px;
+        border-radius: 18px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.427);
+        height: 70%;
+    }
+    
+    form {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    
+    input[type="text"] {
+        width: 70%;
+        font-size: 10px;
+        height: 12px;
+        border-radius: 7px;
+    }
+    
+    input[type="submit"] {
+        padding: 5px;
+        font-size: 10px;
+        border-radius: 7px;
+    }
+    
+    .task input[type="text"] {
+        width: 30%;
+        padding: 3px;
+        font-size: 10px;
+        border-radius: 2px;
+    }
+    
+    .task {
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 8px;
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .task p {
+        font-size: 15px;
+    }
+    
+    .btn-parent{
+        width: 70%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    button {
+        background-color: #ff9800;
+        font-size: 10px;
+        padding: 7px;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+    }
+
+    .add-img{
+        width: 45%;
+        cursor: pointer;
+    }
+    
+    .head{
+        cursor: pointer;
+        font-size: 18px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    #list-parent{
+        /* background-color: #bd8f8f; */
+        width: 102%;
+        height: 75%;
+    }
+}
